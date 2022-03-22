@@ -98,7 +98,7 @@ footer {
 /* CSS da página contato */
 
 main {
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 }
 
@@ -204,6 +204,7 @@ td, th {
 .mapa {
     padding: 3em 0;
     background: linear-gradient(#FEFEFE, #888888);
+    width: 100%;
 }
 
 .mapa-conteudo {
