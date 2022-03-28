@@ -39,7 +39,7 @@ nav a:hover {
 
 /* CSS da página produtos */
 .produtos {
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 	padding: 50px 0;
 }
@@ -101,7 +101,7 @@ main {
 }
 
 form {
-	margin: 40px 0;
+	margin: 40px 20px;
 }
 
 form label, form legend {
@@ -140,7 +140,7 @@ form label, form legend {
 }
 
 table{
-	margin: 20px 0 40px;
+	margin: 20px 20px 40px;
 }
 
 thead{
@@ -253,9 +253,13 @@ td, th {
 }
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+    .caixa ,.principal,.conteudo-beneficios,.mapa-conteudo,.video,.produtos  {
         width: auto;
         align-content: center;
+    }
+  
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
     }
 
     .lista-beneficios {
@@ -274,6 +278,12 @@ td, th {
         position: static;
     }
 
-    .lista-beneficios, .imagem-beneficios {
-        width: 100%;
-    }
+    .produtos li {
+		width: auto;
+		margin: 4% 4%;
+	}
+
+	.enviar {
+		font-size: 12px;
+	}
+}
